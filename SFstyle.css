@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./sfBG.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 11%;
+    cursor: pointer;
+    margin-top: 0;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 88%;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    color: rgb(9, 81, 133);
+
+}
+.row{
+    display: flex;
+    height: 85%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+.col h1{
+    color: #fff;
+    font-size: 8rem;
+    font-weight:700;
+}
+h3{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+span{
+    color: rgb(9, 81, 133);
+}
+.project-title{
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(9, 81, 133);
+  padding: 2.85rem;
+}
+.card{
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px; 
+  margin: 2%;
+}
+.project-content{
+  margin-bottom: 3.85rem;
+}
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+ }
+.card .title{
+  text-align: center;
+  padding: 5px;
+ }
+ .title h1{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  color: rgb(9, 81, 133);
+} 
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 81, 133);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 36px;
+    font-weight: 700;
+    color:#fff ;
+  }
+  .footer-content p{
+    font-size: 16px;
+    color:#fff ;
+    margin-top: 1rem;
+  }
+  .social-icons  a{
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.5s;
+  }
+  .social-icons  a i{
+    width: 4rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  .social-icons a:hover i{
+    color: #fff;
+    transform: translateY(-8px);
+  }
+  .footer-bottom p{
+    font-size: 12px;
+    color:#fff ;
+    margin-top: 0;
+  }
+@media screen and (max-width:480px) {
+    .container{
+        background-position: center;
+        background-size: cover;
+    }
+    .navbar{
+        height: 8%;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        width: 30%;
+        cursor: pointer;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    nav{
+        flex:1;
+        text-align: left;
+    }
+    nav ul li{
+        display: inline-flex;
+        margin-left: 21.5%;
+    }
+    nav ul li a{
+        font-size: 13.5px;
+    }
+    .row .col h1{
+        font-size: 4rem;
+        margin-top: 0;
+    }
+    h3{
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+    .project-title{
+      font-size: 1.85rem;
+    }
+    .card{
+      width: 80%;
+      height: 50%;
+      border-radius: 3px; 
+      margin-bottom: 2rem;
+      margin-left : 2.5rem;
+      margin-right:  2.5rem;
+    }
+    .image img{
+      width: 100%;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+     }
+    .card .title{
+      padding: 3.5px;
+     }
+     .title h1{
+      font-size: 15px;
+      padding: 7.5px;
+    }     
+    .footer{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(9, 81, 133);
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+      }
+      .footer-content h3{
+        font-size: 26px;
+        font-weight: 700;
+        color:#fff ;
+      }
+      .footer-content p{
+        font-size: 0.85rem;
+        color:#fff ;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .social-icons  a{
+        font-size: 15px;
+        color: #fff;
+        transition: all 0.5s;
+      }
+      .social-icons  a i{
+        width: 28px;
+        height: 28px;
+        line-height: 25px;
+        border-radius: 50%;
+        transition: all 0.3s;
+      }
+      .social-icons a:hover i{
+        color: #fff;
+        transform: translateY(-8px);
+      }
+      .footer-bottom p{
+        font-size: 12px;
+        color:#fff ;
+        margin-top: 0;
+      }    
+    }
